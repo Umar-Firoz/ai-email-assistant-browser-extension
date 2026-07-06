@@ -1,0 +1,14 @@
+package com.extension.ai_email.dto;
+
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class EmailResponseDTO {
+    private String generatedEmail;
+    private String tone;
+}
