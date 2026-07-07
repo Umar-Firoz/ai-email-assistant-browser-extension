@@ -10,5 +10,4 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class EmailResponseDTO {
     private String generatedEmail;
-    private String tone;
 }

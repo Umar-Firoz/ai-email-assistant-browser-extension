@@ -20,4 +20,5 @@ public class EmailGeneratorController {
     public ResponseEntity<EmailResponseDTO> generateEmail(@RequestBody EmailRequestDTO emailRequestDTO){
         return ResponseEntity.ok(emailGeneratorService.generateEmail(emailRequestDTO));
     }
+
 }
