@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Writer Assistant</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="popup-wrapper">
+
+        <!-- Header -->
+        <header class="popup-header">
+            <div class="header-logo">✉️</div>
+            <div class="header-text">
+                <h1 class="header-title">Email Writer AI</h1>
+                <p class="header-sub">Summarize &amp; Translate your emails</p>
+            </div>
+        </header>
+
+        <!-- Action Buttons -->
+        <div class="actions-section">
+
+            <!-- Summarize -->
+            <button id="summarize-btn" class="action-btn summarize-btn">
+                <span class="btn-icon">📋</span>
+                <span class="btn-label">Summarize Email</span>
+            </button>
+
+            <!-- Translate -->
+            <div class="translate-group">
+                <button id="translate-btn" class="action-btn translate-btn">
+                    <span class="btn-icon">🌐</span>
+                    <span class="btn-label">Translate Email</span>
+                </button>
+                <select id="language-selector" class="language-select hidden">
+                    <option value="Hindi">Hindi</option>
+                    <option value="Spanish">Spanish</option>
+                    <option value="French">French</option>
+                    <option value="German">German</option>
+                    <option value="Arabic">Arabic</option>
+                    <option value="Chinese">Chinese</option>
+                    <option value="Japanese">Japanese</option>
+                    <option value="Portuguese">Portuguese</option>
+                    <option value="English">English</option>
+                </select>
+                <button id="translate-go-btn" class="action-btn go-btn hidden">
+                    Go →
+                </button>
+            </div>
+        </div>
+
+        <!-- Status Message -->
+        <div id="status-msg" class="status-msg hidden"></div>
+
+        <!-- Result Area -->
+        <div id="result-area" class="result-area hidden">
+            <div class="result-header">
+                <span id="result-label" class="result-label">Result</span>
+                <button id="copy-btn" class="copy-btn">📋 Copy</button>
+            </div>
+            <div id="result-content" class="result-content"></div>
+        </div>
+
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
